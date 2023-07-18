@@ -1,0 +1,3 @@
+From python:latest
+RUN pip install
+CMD ["python3", "app.py"]
