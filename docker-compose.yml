@@ -3,6 +3,6 @@ services:
   web:
     image: hello-world
     ports:
-      -9090:80
+    - 9090:80
   database:
     image: redis
