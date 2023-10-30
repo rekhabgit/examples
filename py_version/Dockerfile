@@ -24,7 +24,7 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get -y --no-install-recommends install 
 RUN rm -rf /var/lib/apt/lists
 
 # # Update alternatives to set Python as the default version
-RUN update-alternatives --install /usr/bin/python python /usr/local/bin/python3.11 1
+RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.11 1
 
 # # Install pip for the selected Python version
 RUN curl -sS https://bootstrap.pypa.io/pip/3.11/get-pip.py | python3.11
